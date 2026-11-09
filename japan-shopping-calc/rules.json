@@ -1,4 +1,212 @@
 {
   "schema": 1,
+  "updatedAt": "2026-11-09",
+  "stores": [
+    {
+      "id": "donki",
+      "name": "唐吉訶德",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "none"
+      },
+      "note": "店家吸收手續費；機場領現金仍可能另收",
+      "source": "linshibi"
+    },
+    {
+      "id": "bic",
+      "name": "BicCamera",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "none"
+      },
+      "note": "店家吸收手續費",
+      "source": "linshibi"
+    },
+    {
+      "id": "takeya",
+      "name": "多慶屋（上野）",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "none"
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "tsuruha",
+      "name": "鶴羽藥妝",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "none"
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "yodobashi",
+      "name": "友都八喜 Yodobashi",
+      "provider": "Global Blue",
+      "fee": {
+        "kind": "none"
+      },
+      "cashFee": {
+        "kind": "percent",
+        "pct": 5,
+        "min": 150,
+        "max": 500
+      },
+      "cashFeeUnverified": true,
+      "note": "11 間市區門市可直接領現金",
+      "source": "hk01"
+    },
+    {
+      "id": "edion",
+      "name": "愛電王 EDION",
+      "provider": "Global Blue",
+      "fee": {
+        "kind": "fixed",
+        "yen": 210
+      },
+      "cashFee": {
+        "kind": "percent",
+        "pct": 5,
+        "min": 100,
+        "max": 500
+      },
+      "cashFeeUnverified": true,
+      "note": "每筆交易定額 210 円",
+      "source": "linshibi"
+    },
+    {
+      "id": "sapporo",
+      "name": "札幌藥妝",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "percent",
+        "pct": 1
+      },
+      "note": "收 1%，但店家表示會直接降價補回",
+      "source": "linshibi"
+    },
+    {
+      "id": "tobu",
+      "name": "東武百貨",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "percent",
+        "pct": 1
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "takashimaya",
+      "name": "高島屋",
+      "provider": "Global Blue",
+      "fee": {
+        "kind": "percent",
+        "pct": 2.3
+      },
+      "note": "官方：扣消費稅額的 23%（約未稅 2.3%），未稅合計滿 100 萬円為 21%；食品 8% 實際較低",
+      "source": "takashimaya"
+    },
+    {
+      "id": "depato",
+      "name": "三越伊勢丹・大丸・松屋等百貨",
+      "provider": "Global Blue",
+      "fee": {
+        "kind": "percent",
+        "pct": 1.55
+      },
+      "note": "過去約 1.5%～1.55%，新制後各家尚未公告（高島屋已調為約 2.3%），請以店內公告為準",
+      "source": "ctee"
+    },
+    {
+      "id": "shibuya109",
+      "name": "澀谷 109",
+      "provider": "PIE VAT",
+      "fee": {
+        "kind": "percent",
+        "pct": 1.55
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "mitsui",
+      "name": "三井 Outlet Park",
+      "provider": "PIE VAT",
+      "fee": {
+        "kind": "percent",
+        "pct": 1.5
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "lalaport",
+      "name": "LaLaport",
+      "provider": "PIE VAT",
+      "fee": {
+        "kind": "percent",
+        "pct": 1.5
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "golf5",
+      "name": "二木高爾夫",
+      "provider": "J-TaxRefund",
+      "fee": {
+        "kind": "percent",
+        "pct": 1.5
+      },
+      "source": "linshibi"
+    },
+    {
+      "id": "shimamura",
+      "name": "思夢樂",
+      "provider": "JPrefund",
+      "fee": {
+        "kind": "percent",
+        "pct": 2.5
+      },
+      "note": "各分店 1%～2.5%，這裡用最高的 2.5% 估算",
+      "source": "linshibi"
+    },
+    {
+      "id": "montbell",
+      "name": "Montbell",
+      "provider": "PIE VAT",
+      "fee": {
+        "kind": "percent",
+        "pct": 3
+      },
+      "note": "各分店 2%～3%，這裡用最高的 3% 估算",
+      "source": "linshibi"
+    },
+    {
+      "id": "murasaki",
+      "name": "MURASAKI SPORTS",
+      "provider": "JPrefund",
+      "fee": {
+        "kind": "percent",
+        "pct": 3
+      },
+      "note": "各分店 2%～3%，這裡用最高的 3% 估算",
+      "source": "linshibi"
+    },
+    {
+      "id": "3coins",
+      "name": "3COINS",
+      "provider": "JPrefund",
+      "fee": {
+        "kind": "fixed",
+        "yen": 320
+      },
+      "source": "linshibi"
+    }
+  ],
+  "sources": {
+    "takashimaya": {
+      "name": "新宿高島屋官方：サービス・施設「2026年11月1日以降の免税制度について」（京都、橫濱店同樣寫法）",
+      "url": "https://www.takashimaya.co.jp/shinjuku/service/"
+    }
+  },
   "notices": []
 }
