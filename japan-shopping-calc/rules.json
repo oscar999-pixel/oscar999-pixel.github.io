@@ -104,8 +104,13 @@
         "kind": "percent",
         "pct": 2.3
       },
-      "note": "官方：扣消費稅額的 23%（約未稅 2.3%），未稅合計滿 100 萬円為 21%；食品 8% 實際較低",
-      "source": "takashimaya"
+      "note": "官方：扣消費稅額的 23%，未稅合計滿 100 萬円為 21%",
+      "source": "takashimaya",
+      "taxFee": {
+        "pct": 23,
+        "highPct": 21,
+        "highFromExcl": 1000000
+      }
     },
     {
       "id": "depato",
