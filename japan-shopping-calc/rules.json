@@ -1,6 +1,71 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-16",
+  "countries": {
+    "TH": {
+      "minimum": {
+        "amount": 2000,
+        "scope": "同一家店、同一天（每張 P.P.10 退稅單都要滿 2,000）"
+      },
+      "steps": [
+        "在有「VAT Refund for Tourists」標誌的店消費，同一家店同一天滿 2,000 泰銖，出示護照，請店家開 P.P.10 退稅單。",
+        "機場：退稅商品合計滿 20,000 泰銖，托運前要先到海關驗貨蓋章；未滿可以直接托運。",
+        "珠寶、名錶等貴重品每件滿 40,000 泰銖，要帶在身上，過出境審查後再給櫃台看。",
+        "過出境審查後到 VAT Refund 櫃台領錢：退稅金額 30,000 泰銖以內可以領現金或退到支付寶、微信支付；超過 30,000 只能退到信用卡。"
+      ],
+      "sources": [
+        {
+          "name": "Trip.com：Thailand Tax Refund 2026",
+          "url": "https://www.trip.com/guide/info/thailand-tax-refund.html"
+        },
+        {
+          "name": "泰國政府公關局：觀光客退稅驗貨門檻調高（2023-12-01 生效）",
+          "url": "https://thailand.prd.go.th/en/content/category/detail/id/2078/iid/249507"
+        },
+        {
+          "name": "泰國稅務廳：VAT Refund For Tourists conditions（2024-06-24 更新）",
+          "url": "https://vrtweb.rd.go.th/81.html"
+        },
+        {
+          "name": "泰國稅務廳：VAT Refund FAQ（2025-01-09 更新）",
+          "url": "https://vrtweb.rd.go.th/69.html"
+        }
+      ]
+    },
+    "CH": {
+      "deadline": "購買後 90 天內帶出瑞士",
+      "sources": [
+        {
+          "name": "Trip.com：Switzerland Tax Refund",
+          "url": "https://sg.trip.com/guide/info/switzerland-tax-refund.html"
+        },
+        {
+          "name": "瑞士聯邦稅務局 ESTV：«Tax-free for tourists» – Ausfuhren im Reiseverkehr",
+          "url": "https://www.estv.admin.ch/de/tax-free-ausfuhren-im-reiseverkehr"
+        },
+        {
+          "name": "瑞士聯邦海關 BAZG：Rückerstattung schweizerische MWST (Private)",
+          "url": "https://www.bazg.admin.ch/de/rueckerstattung-schweizerische-mwst-private"
+        }
+      ]
+    },
+    "PT": {
+      "minimum": {
+        "amount": 61.5,
+        "scope": "同一張發票（官方是未稅 50 歐，含 23% 稅約 61.50 歐）"
+      },
+      "sources": [
+        {
+          "name": "Privé：VAT Refund Rates & Minimum Spend by Country（2026-07）",
+          "url": "https://www.withprive.com/en/blog/vat-refund-rates-by-country"
+        },
+        {
+          "name": "葡萄牙稅務海關總署：Newsletter AT n.º 38（2025-12）E-TAXFREE PORTUGAL",
+          "url": "https://info.portaldasfinancas.gov.pt/pt/at/Divulgacao/publicacoes_internas/Newsletter_AT/Documents/Newsletter-38-dezembro-2025.pdf"
+        }
+      ]
+    }
+  },
   "stores": [
     {
       "id": "donki",
@@ -113,14 +178,25 @@
       }
     },
     {
+      "id": "daimaru",
+      "name": "大丸・松坂屋",
+      "provider": "Global Blue",
+      "fee": {
+        "kind": "percent",
+        "pct": 2.3
+      },
+      "note": "官方：未稅金額的最高 2.3%，退款時扣除",
+      "source": "daimaru"
+    },
+    {
       "id": "depato",
-      "name": "三越伊勢丹・大丸・松屋等百貨",
+      "name": "三越伊勢丹・松屋等百貨",
       "provider": "Global Blue",
       "fee": {
         "kind": "percent",
         "pct": 1.55
       },
-      "note": "過去約 1.5%～1.55%，新制後各家尚未公告（高島屋已調為約 2.3%），請以店內公告為準",
+      "note": "過去約 1.5%～1.55%，新制後官方尚未公告（大丸・松坂屋、高島屋已調為約 2.3%），請以店內公告為準",
       "source": "ctee"
     },
     {
@@ -211,6 +287,10 @@
     "takashimaya": {
       "name": "新宿高島屋官方：サービス・施設「2026年11月1日以降の免税制度について」（京都、橫濱店同樣寫法）",
       "url": "https://www.takashimaya.co.jp/shinjuku/service/"
+    },
+    "daimaru": {
+      "name": "大丸京都店官方：外国のお客様に「輸出免税手続（2026年11月1日からの内容）」（心齋橋、東京、松坂屋上野店同樣寫法）",
+      "url": "https://www.daimaru.co.jp/kyoto/service/gaikoku.html"
     }
   },
   "notices": []
