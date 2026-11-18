@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策 — 台灣空氣品質</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.7 -apple-system, "PingFang TC", "Helvetica Neue", sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #111; } a { color: #6cb0ff; } }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+  ul { padding-left: 1.3em; }
+</style>
+</head>
+<body>
+
+<h1>隱私權政策</h1>
+<p class="updated">最後更新：2026-11-03</p>
+
+<p>「台灣空氣品質」（以下稱「本 App」）由個人開發者開發。本政策說明本 App 如何處理你的資料。</p>
+
+<h2>位置資訊</h2>
+<p>本 App 在你同意後會讀取裝置位置，只用來在你的裝置上找出離你最近的空氣品質測站。<strong>在台灣時，位置資訊只在你的裝置上計算，不會傳送到本 App 的伺服器，也不會被儲存。</strong>人在國外時，為了查詢當地的測站，本 App 只會送出你所在的大概區域（座標四捨五入到約 50 公里的格子，無法看出你的確切位置）給本 App 的伺服器，伺服器不會儲存；離你最近的測站仍在你的裝置上計算。你可以隨時在裝置的「設定 → 隱私權與安全性 → 定位服務」中關閉，關閉後仍可手動選擇測站。</p>
+
+<h2>空汙警示（選用）</h2>
+<p>如果你開啟「空汙警示」，本 App 會把以下資料傳到本 App 的伺服器，只用來在空氣品質超過你設定的門檻時發送推播通知：</p>
+<ul>
+  <li>這支裝置的推播代碼（由 Apple 與 Expo 推播服務產生，不包含姓名、電話等個人資訊）</li>
+  <li>你選擇的測站與 AQI 門檻</li>
+</ul>
+<p>推播透過 Expo 推播服務（expo.dev）與 Apple 推播通知服務送達。<strong>不會傳送你的位置。</strong>關閉空汙警示時，伺服器上的這筆資料會立即刪除；移除本 App 後，推播代碼失效，伺服器也會在下次發送時自動刪除。</p>
+
+<h2>本 App 不收集的資料</h2>
+<ul>
+  <li>本 App 不需要註冊或登入，不會要求你提供姓名、電子郵件、電話等個人資訊。</li>
+  <li>收藏的測站僅儲存在你的裝置本機，不會上傳到任何伺服器。</li>
+</ul>
+
+<h2>資料來源</h2>
+<p>空氣品質資料來自環境部環境資料開放平臺（data.moenv.gov.tw），依「政府資料開放授權條款」使用。數值為環境部公布之監測資料，本 App 僅作彙整與呈現，資料正確性以環境部公布為準。</p>
+<p>台灣以外地區的測站資料來自 OpenAQ（openaq.org），AQI 依 PM2.5（或 PM10）照美國環保署標準換算，可能與當地官方公布的不同；風向風速來自挪威氣象局 MET Norway（api.met.no，依 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> 授權使用）；野火熱點來自美國太空總署 NASA FIRMS。</p>
+<p>「可能原因」是本 App 依風向、上風處測站、官方預報與衛星火點推估的結果，僅供參考，不代表官方判定。</p>
+
+<h2>廣告（Google AdMob）</h2>
+<p>本 App 內含 Google AdMob 提供的橫幅廣告。AdMob SDK 可能會收集下列資料以提供與衡量廣告：</p>
+<ul>
+  <li>裝置識別碼（例如廣告識別碼）</li>
+  <li>粗略位置</li>
+  <li>廣告互動與使用資料</li>
+  <li>當機與診斷資料</li>
+</ul>
+<p>這些資料由 Google 依其政策處理，本 App 開發者無法存取可識別個人身分的資料。詳情請參閱
+<a href="https://policies.google.com/technologies/partner-sites">Google 的資料使用說明</a> 與
+<a href="https://support.google.com/admob/answer/6128543">AdMob 的資料揭露</a>。</p>
+
+<h2>兒童</h2>
+<p>本 App 不針對 13 歲以下兒童設計，也不會刻意收集兒童的個人資料。</p>
+
+<h2>資料保留與刪除</h2>
+<p>本機儲存的收藏可在 App 內移除，或移除本 App 即一併刪除。空汙警示的訂閱資料在你關閉警示時立即刪除。</p>
+
+<h2>政策變更</h2>
+<p>本政策如有更新，會於本頁面公告並更新上方日期。</p>
+
+<h2>聯絡方式</h2>
+<p>如對本政策有疑問，請來信：<a href="mailto:oscar.tsai999@gmail.com">oscar.tsai999@gmail.com</a></p>
+
+</body>
+</html>
